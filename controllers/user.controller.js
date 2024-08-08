@@ -28,7 +28,7 @@ const LoggedIn = async (req, res) => {
      return   res.send({ message: "password is incorrect" })
     }
 
-    res.send({ message: "logged in successfully" })
+    res.send({ message: "logged in successfully",User: isUser })
 
 }
 

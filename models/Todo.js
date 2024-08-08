@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 
 const TodoSchema = new mongoose.Schema({
     task: String,
-    status: Boolean,
+    status: {type :Boolean, default: false},
+    userId: String
 
 })
 
